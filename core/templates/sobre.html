@@ -1,0 +1,35 @@
+{% load static %}
+<section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+            {% for h in pessoa %}
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
+              <img class="img-fluid" src="{{ h.perfil.thumb.url }}" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
+              <h3>Eai Pessoal !</h3>
+
+              <p>{{ h.descricao }}</p>
+              <div class="about-profile">
+                <ul class="admin-profile">
+                  <li><span class="pro-title"> Nome </span> <span class="pro-detail">{{ h.nome }}</span></li>
+                  <li><span class="pro-title"> Idade </span> <span class="pro-detail">{{ h.idade }}</span></li>
+                  <li><span class="pro-title"> Experiencia </span> <span class="pro-detail">{{ h.experiencia }}</span></li>
+                  <li><span class="pro-title"> Pais </span> <span class="pro-detail">{{ h.pais }}</span></li>
+                  <li><span class="pro-title"> Localização </span> <span class="pro-detail">{{ h.cidade }}</span></li>
+                  <li><span class="pro-title"> e-mail </span> <span class="pro-detail">{{ h.email }}</span></li>
+                  <li><span class="pro-title"> Telefone </span> <span class="pro-detail">{{ h.telefone1 }}</span></li>
+                  <li><span class="pro-title"> Freelance </span> <span class="pro-detail">{{ h.freelance }}</span></li>
+                </ul>
+              </div>
+    {% endfor %}
+              <a href="#contact" class="btn btn-common"><i class="icon-speech"></i> Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
