@@ -1,2 +1,2 @@
 # meetme
-Aplicação feita em python utilizando django.
+Aplicação web feita em python utilizando django.
