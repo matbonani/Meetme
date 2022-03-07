@@ -1,2 +1,2 @@
 # meetme
-Aplicação web feita em python utilizando django.
+Aplicação com função de upload de imagens, cadastro/atualização de novos serviços, formulário de contato e envio de email.
